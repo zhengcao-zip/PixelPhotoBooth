@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: #1a0505;
+  overflow: hidden;
+  margin: 0;
+}
+
+/* Retro Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #800020;
+  border-radius: 0px;
+}
+
+/* Pixel Art Utilities */
+.pixel-border {
+  box-shadow: 
+    -4px 0 0 0 black,
+    4px 0 0 0 black,
+    0 -4px 0 0 black,
+    0 4px 0 0 black;
+}
+
+.pixel-text-shadow {
+  text-shadow: 2px 2px 0px #000000;
+}
