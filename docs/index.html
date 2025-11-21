@@ -85,15 +85,17 @@
         // WARNING: This key will be visible in the source code. Use a restricted key if possible.
         const API_KEY = "YOUR_API_KEY_HERE"; 
         
-        // --- TYPES ---
-        enum AppState {
-            LANDING = 'LANDING',
-            COUNTDOWN = 'COUNTDOWN',
-            SHOOTING = 'SHOOTING',
-            PROCESSING = 'PROCESSING',
-            RESULT = 'RESULT'
-        }
+        // --- STATE DEFINITIONS ---
+        // Fixed: Defined as a const object to avoid Runtime ReferenceErrors
+        const AppState = {
+            LANDING: 'LANDING',
+            COUNTDOWN: 'COUNTDOWN',
+            SHOOTING: 'SHOOTING',
+            PROCESSING: 'PROCESSING',
+            RESULT: 'RESULT'
+        };
 
+        // Interfaces are stripped by Babel (TypeScript preset), so these are safe to keep for documentation/IDE support
         interface PhotoData {
             id: string;
             dataUrl: string;
