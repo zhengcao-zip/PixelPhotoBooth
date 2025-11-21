@@ -1,0 +1,27 @@
+/* @tailwind directives removed for browser compatibility. Using CDN in index.html instead. */
+
+body {
+  font-family: 'VT323', monospace;
+  background-color: #1a0505;
+  overflow: hidden;
+}
+
+/* Retro Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+::-webkit-scrollbar-thumb {
+  background: #800020;
+  border-radius: 0px;
+}
+
+.pixel-border {
+  box-shadow: 
+    -4px 0 0 0 black,
+    4px 0 0 0 black,
+    0 -4px 0 0 black,
+    0 4px 0 0 black;
+}

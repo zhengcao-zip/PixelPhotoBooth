@@ -1,0 +1,7 @@
+{
+  "name": "Copy of RetroPixel Booth",
+  "description": "A nostalgic, 3D pixel-art styled online photobooth that creates vintage film strips with AI-generated captions.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
